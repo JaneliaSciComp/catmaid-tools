@@ -330,7 +330,7 @@ public class TileCATMAID
 		transform.set(
 				1, 0, 0, -offsetX,
 				0, 1, 0, -offsetY,
-				0, 0, scaleZ, -offsetZ );
+				0, 0, 1 / scaleZ, -offsetZ );
 		final RealRandomAccessible< ARGBType > interpolant;
 		switch ( interpolation )
 		{
